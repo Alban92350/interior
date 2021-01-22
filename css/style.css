@@ -1,0 +1,294 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #181719;
+}
+
+/********
+HEADER
+********/
+
+header{
+    position: relative;
+    height: 30vh;
+}
+
+#hamburger{
+    display: none;
+}
+
+header h1{
+    font-size: 1.2rem;
+    width: 6.5vw;
+    padding: 1%;
+    border: solid white;
+    color: white;
+    position: absolute;
+    top: 3vh;
+    left: 4vw;
+
+}
+
+
+header nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav a{
+    color: white;
+    text-decoration: none;
+    margin: 2% 3% 0% 3%;
+    font-size: 1.8rem;
+}
+
+
+/********
+MAIN
+********/
+
+main{
+    display: flex;
+    height: 110vh;
+}
+
+.explain{
+    width: 30vw;
+    margin-left: 5vw;
+    color: white;
+}
+
+.explain h2{
+    font-family: lora;
+    font-size: 4.8rem;
+    margin-bottom: 3vh;
+    
+}
+
+.explain p{
+    font-size: 2.4rem;
+    font-family: Montserrat;
+    margin-bottom: 3vh;
+    color: lightgray;
+}
+
+.explain span{
+    font-family: Montserrat;
+    font-size:1.8rem;
+}
+
+.picture{
+    text-align: center;
+}
+
+.test{
+    width: 55vw;
+    height: 82vh;
+    position: relative;
+    margin-left: 8vw;
+}
+
+.picture .test img{
+    width: 55vw; 
+    height: 82vh;
+}
+
+.picture .designer{
+    position: absolute;
+    top: 80%;
+    background-color:#181719 ;
+    position: absolute;
+    left: 40%;
+    width: 30vw;
+    color: white;
+    text-align: justify;  
+}
+
+
+
+.picture .designer img{
+    width: 4vw;
+    height: 8vh;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:50px;
+    margin: 0 3% 0 3%
+}
+
+.picture .designer .description{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 14vh;
+   
+}
+
+.picture .designer .description p{
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    color: lightgray;
+}
+
+
+
+
+
+.picture .designer span p{
+    font-size: 2.4rem;
+    line-height: 3rem;
+    margin-left: 5%;
+   
+}
+
+/********
+FOOTER
+********/
+
+
+footer{
+    display: flex;
+    justify-content: center;    
+    height: 7vh;
+}
+
+footer p{
+    font-size: 1.8rem;
+    color: white;
+}
+
+
+@media screen and (max-width: 800px){
+
+html{
+    font-size: 55%;
+}
+
+header{
+    height: 15vh;
+}
+header h1{
+    width: 11vw;
+}
+
+
+main{
+    display: block;
+    height: 145vh;
+}
+
+.explain{
+    width: 95vw;
+    height: 40vh;
+}
+
+.test{
+    width: 100vw;
+    height: 75vh;
+    margin-left:0;
+}
+
+.picture .test img{
+    width: 100vw;
+    height: 75vh;
+}
+
+.picture .test .designer .description{
+    height: 10vh;
+}
+
+.picture .test .designer{
+    width: 50vw;
+    top: 65vh;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: 1px 1px 5px black;
+}
+
+.picture .test .designer img{
+    width: 7vw;
+    height: 7vh;
+}
+
+  
+nav{
+    position: fixed;
+    top: 15vh;
+    left: 100%;
+    width: 100%;
+    clear: both;
+    flex-wrap: wrap;
+    z-index: 30000;
+    transition: 0.4s;
+    height: 40vh;
+    background-color: #181719 ;
+}
+nav a{
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+img#hamburger{
+    display: block;
+    width: 3em;
+    position: fixed;
+    left: 85%;
+    top: 5vh;
+    z-index: 9999;
+
+} 
+
+}
+
+
+@media screen and (max-width: 450px){
+
+ html{
+     font-size: 45% ;
+}
+
+main{
+    height: 110vh;
+}
+
+header h1{
+    width: 15vw;
+}
+
+.picture .test{
+    height: 38vh;
+    
+}
+
+.picture .test img{
+    width: 100vw;
+    height: 45vh;
+}
+
+.picture .test .designer{
+    width: 60vw;
+    top: 38vh;
+}
+
+
+.picture .test .designer img{
+    height: 5vh;
+    width: 10vw;
+
+}
+
+
+
+
+
+}
+
+
+
